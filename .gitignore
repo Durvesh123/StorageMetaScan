@@ -1,6 +1,6 @@
-venv/
-outputs/
-__pycache__/
+storage_monitor/venv/
+storage_monitor/outputs/
 *.pyc
-superset.db
-logs/
+__pycache__/
+superset/superset.db
+.env
