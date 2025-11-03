@@ -57,6 +57,16 @@ print(f"Parquet backup saved to {output_dir}")
 
 # 6️⃣ Load into MySQL
 mysql_url = "jdbc:mysql://localhost:3306/storage_metadata"
+
+MYSQL_USER = os.environ.get("MYSQL_USER", "root")
+MYSQL_PASS = os.environ.get("MYSQL_PASS", "change_me")
+
+mysql_properties = {
+    "user": MYSQL_USER,
+    "password": MYSQL_PASS,
+    "driver": "com.mysql.cj.jdbc.Driver"
+}
+
 mysql_properties = {
     "user": MYSQL_USER,
     "password": MYSQL_PASS,    #Replace with your DB Password
