@@ -58,8 +58,8 @@ print(f"Parquet backup saved to {output_dir}")
 # 6️⃣ Load into MySQL
 mysql_url = "jdbc:mysql://localhost:3306/storage_metadata"
 mysql_properties = {
-    "user": "sparkuser",
-    "password": "Your Password",    #Replace with your DB Password
+    "user": MYSQL_USER,
+    "password": MYSQL_PASS,    #Replace with your DB Password
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
