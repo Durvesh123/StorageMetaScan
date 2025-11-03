@@ -1,0 +1,14 @@
+# config.yaml - storage monitor configuration
+# Edit root_paths to point to directories you want to scan for the POC.
+
+root_paths:
+  - /root/testdata    # change this to your test path; you can add more
+scan_date: auto                  # "auto" -> uses today's date as YYYY-MM-DD
+min_hash_size_bytes: 1024        # skip partial hashing for files smaller than this
+partial_hash_bytes: 4096         # bytes to use for partial hashing (first+last)
+output_dir: ./outputs/metadata   # where Parquet will be written (relative to project)
+file_size_alert_bytes: 1073741824 # 1 GiB - used for quick "big files" alerts
+walk_chunk_depth: 1              # depth to chunk directories for parallelization
+max_workers: 4                   # Spark local[*] will use this number of partitions (local testing)
+log_file: ./outputs/logs/scan.log
+

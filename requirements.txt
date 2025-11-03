@@ -1,0 +1,5 @@
+duckdb==1.4.1
+py4j==0.10.9.9
+pyarrow==21.0.0
+pyspark==4.0.1
+PyYAML==6.0.3
