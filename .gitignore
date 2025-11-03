@@ -4,3 +4,4 @@ storage_monitor/outputs/
 __pycache__/
 superset/superset.db
 .env
+storage_monitor/outputs/logs/
