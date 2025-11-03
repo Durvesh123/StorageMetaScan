@@ -82,14 +82,12 @@ VM-File-Monitoring-Setup/
 - Apache Superset
 - Linux environment
 
-
-
 # 🚀 Getting Started
 
 ## **1. Clone the Repository**
 ```bash
-git clone https://github.com/Durvesh123/VM-File-Monitoring-Setup.git
-cd VM-File-Monitoring-Setup/storage_monitor
+git clone https://github.com/Durvesh123/StorageMetaScan.git
+cd StorageMetaScan/storage_monitor
 ```
 ## **2. Create Virtual Environment**
 ```bash
