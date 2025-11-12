@@ -140,7 +140,7 @@ This will:
 
 # 🏗️ System Architecture
 The following diagram provides a complete overview of the **Storage Monitoring and Metadata Pipeline** — from configuration, scanning, metadata collection, and MySQL loading, to Superset-based visualization.
-![System Architecture](outputs/architecture.png)
+![System Architecture](outputs/architecture.PNG)
 
 # 🧠 How It Works (Architecture Overview)
 ## **1. Scanner Phase (PySpark)**
