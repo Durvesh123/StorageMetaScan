@@ -126,19 +126,21 @@ Run ingestion:
 ```bash
 python3 scan_vm_to_mysql.py
 ```
-## **7. Visualize in Apache Superset**
-Place your Superset configuration:
+## **7. Superset Setup & Visualization**
+To simplify Superset setup and startup, a helper script — start_superset.sh — is included.
 ```bash
-superset/superset_config.py
+cd ~/superset
+chmod +x start_superset.sh
+./start_superset.sh
 ```
-Start Superset:
-```bash
-superset run -p 8088 --with-threads --reload --debugger
-```
-Then:
-- Connect to MySQL
-- Import the metadata table
-- Build dashboards
+This will:
+- Activate `/opt/superset-venv`
+- Perform `superset db upgrade` and `superset init`
+- Start Superset at: `http://<your_vm_ip>:8088`
+
+# 🏗️ System Architecture
+The following diagram provides a complete overview of the **Storage Monitoring and Metadata Pipeline** — from configuration, scanning, metadata collection, and MySQL loading, to Superset-based visualization.
+![System Architecture](outputs/architecture.png)
 
 # 🧠 How It Works (Architecture Overview)
 ## **1. Scanner Phase (PySpark)**
